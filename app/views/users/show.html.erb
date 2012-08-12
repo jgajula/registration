@@ -1,0 +1,42 @@
+<div id="jobsDiv">
+
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <b>Firstname:</b>
+    <%= @user.firstname %>
+  </p>
+
+  <p>
+    <b>Lastname:</b>
+    <%= @user.lastname %>
+  </p>
+
+  <p>
+    <b>Email:</b>
+    <%= @user.email %>
+  </p>
+
+  <p>
+    <b>Password: ******</b>
+  </p>
+
+  <p>
+    <b>Birthdate:</b>
+    <%= @user.birthdate %>
+  </p>
+
+  <p>
+    <b>Location:</b>
+    <%= @user.location %>
+  </p>
+
+  <div id="showJobsDiv">
+    <h2>Jobs</h2>
+    <%= render @user.jobs %>
+  </div>
+
+  <%= link_to 'Edit or add jobs', edit_user_path(@user) %><br/>
+  <%= link_to 'Done', '/homepage' %>
+</div>
+

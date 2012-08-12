@@ -1,0 +1,11 @@
+
+<%= form.fields_for :jobs do |job_form| %>
+  <div class="field">
+    <%= job_form.label :title, 'Title:' %>
+    <%= job_form.text_field :title %>
+  </div>
+  <div class="field">
+    <%= job_form.label :company, 'Company:' %>
+    <%= job_form.text_field :company %>
+  </div>
+<% end %>

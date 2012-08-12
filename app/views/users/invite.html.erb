@@ -1,0 +1,7 @@
+<% if @existingEmails == 0 %>
+  <h1>Thank you for signing up!</h1>
+  <h3>Please check your email to complete the sign up process</h3>
+<% else %>
+    <h1>Sorry, this email is already registered, please enter a different one <%= link_to 'here', '/'%></h1>
+<% end %>
+

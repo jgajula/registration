@@ -1,0 +1,12 @@
+<div id="singupFormDiv">
+  <%= form_tag( "/invite", :method => "get") do %>
+  <p id="singUpMessage">Enter your email address to sign up!</p>
+  <p>
+     <%= text_field_tag "signUpEmail" %>
+     <%= submit_tag 'Sign Up', :class => 'signUpSubmit' %>
+   </p>
+  <% end %>
+</div>
+
+
+

@@ -1,0 +1,16 @@
+    <p>
+      <b>Title:</b>
+      <%= job.title %>
+    </p>
+
+    <p>
+      <b>Company:</b>
+      <%= job.company %>
+    </p>
+    
+    
+    <p>
+    <%= link_to 'Remove Job', [job.user, job],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+    </p>

@@ -1,0 +1,71 @@
+About this Application
+-----------------------
+
+What does it do?
+
+1) Present the user with a sign up form to enter his/her email address
+2) Send an email to the user with encrypted(base64) sign up link
+3) Upon receiving initiation for the sign up process, it validates and present the sign up form
+4) Let users save their first name, last name, email, password, birth date, and location
+5) Upon saving above info, user will be given an option to enter his job history info ( title, and company name)
+6) Once the user is done with above steps, they will be taken to a homepage, where they will be given an option to edit prior details
+
+
+Security
+---------
+- Used base64 encryption for sending signup links using a salt, hackers can not created their own sign up links to spam
+- A check is placed to see requesting sign up email already exists,if so informs the user
+- passwords are not displayed
+- does not accept invalid email address
+
+Rails concepts
+---------------
+- model relations are properly utilized
+- User object has many jobs
+- Job object belongs to User
+- validation is added to User and job input forms
+- partial view is created for jobs form
+- mailer class created for sending emails
+- made use of flash object
+- view helpers like form_tag, link_to are utilized
+
+
+screenshots explanation
+-----------------------
+1) User comes to signup request page, and enters valid email address and click signup. Email will be sent to user with encoded sign up link.
+   If invalid or empty email address is entered validation errors will be shown. If entered email already exists in database, message will be show appropriately
+   
+2) Upon enter valid email address users will be shown a thank you message and directing them to check their email to complete the sign up process
+
+3) Email message contains a link back to the application, this URL has encoded message only understood by our application
+
+4) Once the users click encoded sign up link, they will be taken to the actual sign up form asking for their first , last name, email, password, birthday, location.
+   If invalid sign up links is clicked, users will be shown validation error message
+   
+5) After entering above details, users will be given a choice enter their job history
+
+6)  All the entered details are shown after clicking update
+
+7) User can add more jobs after clicking "show or add jobs" option
+
+8) User can delete a job after clicking "remove" link. They will be asked to confirm before removing.
+
+9) User will be redirected to Thanks for signing up page after clicking "done" link
+
+10) In the above page, they will be give an option to edit all the details entered before by clicking "edit" link
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

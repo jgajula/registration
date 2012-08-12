@@ -1,0 +1,131 @@
+body {
+    font-family: Helvetica, Arial, sans-serif !important;
+}
+ 
+#singupFormDiv {
+    background-color: #39C;
+    color: white;
+    width: 435px;
+    height: 97px;
+    padding: 14px;
+    border-radius: 10px;
+    margin:auto;  
+ }
+ 
+ #signUpEmail {
+    width: 301px;
+    height: 20px;
+ }
+ 
+ .signUpSubmit{
+    font-size: 15px;
+    color: white;
+    background-color: #FF9933;
+ }
+
+ #registrationDiv{
+    background-color: #39C;
+    color: white;
+    width: 435px;
+    padding: 14px;
+    border-radius: 10px;
+    margin:auto; 
+ }
+
+#registrationDiv input {
+    width: 301px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#registrationDiv label {
+    font-size: 18px;
+}
+
+.registrationSubmit{
+    font-size: 18px;
+    width:100px!important;
+    color: white;
+    background-color: #FF9933;
+    height: 30px!important;
+}
+
+
+ #editUserDiv{
+    background-color: #39C;
+    color: white;
+    width: 435px;
+    padding: 14px;
+    border-radius: 10px;
+    margin:auto; 
+ }
+
+#editUserDiv input {
+    width: 301px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#editUserDiv label {
+    font-size: 18px;
+}
+
+#notice{
+    color: #fffff;
+}
+
+#editJobDiv{
+    background-color: #39C;
+    color: white;
+    width: 435px;
+    padding: 14px;
+    border-radius: 10px;
+    margin:auto; 
+}
+
+#editJobDiv input{
+    width: 301px;
+    height: 20px;
+    margin-top: 10px;
+
+}
+
+#editJobDiv label {
+    font-size: 18px;
+}
+
+#showJobsDiv {
+    background-color: grey;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+ #jobsDiv{
+    background-color: #39C;
+    color: white;
+    width: 435px;
+    padding: 14px;
+    border-radius: 10px;
+    margin:auto; 
+ }
+
+#jobsDiv input {
+    width: 301px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#jobsDiv label {
+    font-size: 18px;
+}
+
+.jobsSubmit{
+    font-size: 18px;
+    width:100px!important;
+    color: white;
+    background-color: #FF9933;
+    height: 30px!important;
+}
